@@ -15,6 +15,7 @@ app.use(cors())
 
 
 const server = () =>{
+    db();
     app.listen(PORT,()=>{
         console.log('listening to port:',PORT)
     })
